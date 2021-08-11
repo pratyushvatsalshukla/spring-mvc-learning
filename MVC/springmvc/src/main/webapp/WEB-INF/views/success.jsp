@@ -8,8 +8,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Welcome ${name }</h1>
-	<h1>Your Email Id Is : ${email }</h1>
-	<h1>Password Is :  ${password }</h1>
+	<h1>Welcome ${user.userName }</h1>
+	<h1>Your Email Id Is : ${user.email }</h1>
+	<h1>Password Is :  ${user.password }</h1>
 </body>
 </html>

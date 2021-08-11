@@ -4,9 +4,12 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import springmvc.model.User;
  
 @Controller
 public class ContactController {
@@ -17,19 +20,10 @@ public class ContactController {
 	}
 
 	@RequestMapping(path = "/processform", method = RequestMethod.POST)
-	public String handleForm(
-			@RequestParam("email") String receivedEmail, 
-			@RequestParam("username") String receivedUserName, 
-			@RequestParam("password") String receivedPassword, Model model)
+	public String handleForm(@ModelAttribute User user, Model model)
 	{
-		System.out.println("Form Received !!");
-		// System.out.println("User email id : " + request.getParameter("email"));
-		System.out.println("User Email : "+ receivedEmail + " User Name : "+ receivedUserName + " User Password : "+ receivedPassword);
-		
-		model.addAttribute("name", receivedUserName) ;
-		model.addAttribute("email", receivedEmail) ;
-		model.addAttribute("password", receivedPassword) ;
 		return "success";
 	}
-
+	
 }
+
