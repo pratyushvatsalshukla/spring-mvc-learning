@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@page isELIgnored = "false" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,7 +12,7 @@
 <body>
 <H1>HI THERE !! THIS IS HELP JSP</H1>
 
-	<%
+<%-- 	<%
 	
 		String name = (String)request.getAttribute("name") ;
 		Integer rollnumber = (Integer) request.getAttribute("rollnumber") ;
@@ -24,6 +27,6 @@
 	
 	</h1>
 
-
+ --%>
 </body>
 </html>
