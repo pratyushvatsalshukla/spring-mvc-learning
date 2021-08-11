@@ -1,6 +1,6 @@
 <html>
 <body>
 <h2>Hello World!</h2>
-This is My Project !!
+I am inside Home URL !!
 </body>
 </html>
